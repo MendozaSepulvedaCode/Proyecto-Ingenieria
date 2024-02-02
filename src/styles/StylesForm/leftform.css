@@ -56,3 +56,35 @@
   margin: 0;
   font-size: 12px;
 }
+
+@media screen and (max-width: 1300px) {
+  .head-lf-frm {
+    padding: 40px;
+  }
+
+  .head-lf-frm h5 {
+    font-size: 15px;
+  }
+
+  .head-lf-frm h3 {
+    font-size: 25px;
+  }
+
+  .head-lf-frm svg {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .head-lf-frm h5 {
+    font-size: 15px;
+  }
+
+  .head-lf-frm h3 {
+    font-size: 22px;
+  }
+
+  .head-lf-frm svg {
+    font-size: 50px;
+  }
+}

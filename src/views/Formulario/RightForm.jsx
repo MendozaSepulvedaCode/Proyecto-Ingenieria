@@ -21,35 +21,35 @@ function RightForm() {
     <div className="rg-form">
       <div className="cnt-form">
         <img src={LogoUtb} alt="Utb" className="img-lg-utb" />
-        <Steps current={current} items={items} />
+        <Steps current={current} items={items} direction="horizontal" />
         <div className="content-form">{steps[current].content}</div>
-        <div
-          style={{
-            marginTop: 24,
-          }}
-        >
+        <div className="fto-step">
           {current < steps.length - 1 && (
-            <Button type="primary" onClick={() => next()}>
+            <button type="primary" className="btn-sgt" onClick={() => next()}>
               Siguiente
-            </Button>
+            </button>
           )}
           {current === steps.length - 1 && (
-            <Button
+            <button
               type="primary"
-              onClick={() => message.success("Processing complete!")}
+              className="btn-fn"
+              onClick={() =>
+                message.success("Reserva a espera de confirmacion")
+              }
             >
               Finalizar
-            </Button>
+            </button>
           )}
           {current > 0 && (
-            <Button
+            <button
               style={{
                 margin: "0 8px",
               }}
+              className="btn-ant"
               onClick={() => prev()}
             >
               Anterior
-            </Button>
+            </button>
           )}
         </div>
       </div>
